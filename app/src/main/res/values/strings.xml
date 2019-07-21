@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">100 irregular verbs</string>
+    <string name="strings_type_of_lesson">Выбор задания</string>
+
+    <string-array name="mainactivity_spinner">
+        <item>Изучение 1-20</item>
+        <item>Изучение 21-40</item>
+        <item>Изучение 41-60</item>
+        <item>Изучение 61-80</item>
+        <item>Изучение 81-100</item>
+        <item>Изучение всего материала</item>
+    </string-array>
 </resources>

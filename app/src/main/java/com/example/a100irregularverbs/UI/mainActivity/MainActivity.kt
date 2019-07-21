@@ -1,7 +1,8 @@
-package com.example.a100irregularverbs
+package com.example.a100irregularverbs.UI.mainActivity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.a100irregularverbs.R
 
 class MainActivity : AppCompatActivity() {
 

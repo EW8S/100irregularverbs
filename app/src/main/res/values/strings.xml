@@ -1,6 +1,17 @@
 <resources>
     <string name="app_name">100 irregular verbs</string>
     <string name="strings_type_of_lesson">Выбор задания</string>
+    <string name="text_enable_audio">Разрешить аудио</string>
+    <string name="text_enable_random">Случайный выбор</string>
+    <string name="text_btn_start">НАЧАТЬ</string>
+    <string name="text_tv_task">task</string>
+    <string name="text_tv_v1">V1</string>
+    <string name="text_tv_v2">V2</string>
+    <string name="text_tv_v3">V3</string>
+    <string name="text_btn_check">C</string>
+    <string name="text_btn_help">H</string>
+    <string name="text_btn_sound">S</string>
+    <string name="text_btn_next_task">NEXT</string>
 
     <string-array name="mainactivity_spinner">
         <item>Изучение 1-20</item>
@@ -10,4 +21,5 @@
         <item>Изучение 81-100</item>
         <item>Изучение всего материала</item>
     </string-array>
+
 </resources>

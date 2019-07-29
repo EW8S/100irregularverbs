@@ -9,6 +9,8 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
+    //https://youtu.be/LRhu6oRWMjk
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -18,4 +20,7 @@ class MainActivity : AppCompatActivity() {
     fun btn_start_click(v:View){
         Toast.makeText(this, "Click", Toast.LENGTH_SHORT).show()
     }
+
+
+
 }

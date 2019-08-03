@@ -1,5 +1,6 @@
 package com.example.a100irregularverbs.UI.mainActivity
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -10,6 +11,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 class MainActivity : AppCompatActivity() {
 
     //https://youtu.be/LRhu6oRWMjk
+    val mainPresentor = MainPresentor(this)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -19,6 +21,7 @@ class MainActivity : AppCompatActivity() {
 
     fun btn_start_click(v:View){
         Toast.makeText(this, "Click", Toast.LENGTH_SHORT).show()
+        mainPresentor.openActivity()
     }
 
 

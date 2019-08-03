@@ -20,8 +20,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun btn_start_click(v:View){
-        Toast.makeText(this, "Click", Toast.LENGTH_SHORT).show()
-        mainPresentor.openActivity()
+        mainPresentor.btn_click()
     }
 
 

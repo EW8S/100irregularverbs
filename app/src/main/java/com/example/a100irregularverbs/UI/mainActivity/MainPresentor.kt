@@ -12,7 +12,7 @@ class MainPresentor(context:Context) {
         this.context = context
     }
 
-    public fun openActivity(){
+    fun btn_click(){
         val intent = Intent(context, WorkActivity::class.java)
         context.startActivity(intent)
     }

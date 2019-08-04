@@ -1,13 +1,38 @@
 package com.example.a100irregularverbs.model.repository
 
-class ReadJsonFromAssets {
+import android.app.Activity
+import android.content.Context
+import java.io.IOException
+import java.io.InputStream
 
-    var list: List<String>? = null
+class ReadJsonFromAssets (context: Context){
 
-    constructor() : super() {}
+    var context: Context
 
-    constructor(list: List<String>) : super() {
-        this.list = list
+    init {
+        this.context = context
     }
+
+    fun readJson(){
+        var json: String? = null
+
+        try {
+            val inputStream:InputStream = context.assets.open("105.json")
+            //val inputStream: InputStream = am.open("105.json")!!
+            //json = inputStream.bufferedReader().use { it.readText()}
+            json = "dadsad"
+
+        }catch(e : IOException){
+
+        }
+    }
+
+//    fun getStringFromAssetFile(): String {
+//        val am = context.assets
+//        val is = am.open("test.txt")
+//        val s = convertStreamToString(`is`)
+//        `is`.close()
+//        return s
+//    }
 
 }

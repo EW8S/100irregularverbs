@@ -90,7 +90,7 @@
 	{"ru":"Означать, намериваться", "v1":"mean", "v2":"meant", "v3":"meant"},
 	{"ru":"Светить, сиять", "v1":"shine", "v2":"shone", "v3":"shone"},
 	{"ru":"Портить", "v1":"spoil", "v2":"spoiled/spoilt", "v3":"spoiled/spoilt"},
-	{"ru":"произносить или писать по буквам", "v1":"spell", "v2":"spelt", "v3":"spelt"},
+	{"ru":"Произносить или писать по буквам", "v1":"spell", "v2":"spelt", "v3":"spelt"},
 	{"ru":"Возникать (появляться)", "v1":"arise", "v2":"arose", "v3":"arisen"},
 	{"ru":"Плакать", "v1":"weep", "v2":"wept", "v3":"wept"},
 	{"ru":"Искать", "v1":"seek", "v2":"sought", "v3":"sought"},

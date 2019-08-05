@@ -9,6 +9,7 @@ class Work {
     var readJsonFromAssets: ReadJsonFromAssets
     var context: Context
     var listTask: TaskObject? = null
+    var selectPositionTask:Int = -1
 
     constructor(context: Context) {
         this.context = context

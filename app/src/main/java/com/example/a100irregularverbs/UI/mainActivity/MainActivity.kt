@@ -4,8 +4,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import com.example.a100irregularverbs.R
+import kotlinx.android.synthetic.main.activity_main.*
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(), IMainActivity {
 
     //https://youtu.be/LRhu6oRWMjk
     var mainPresentor:MainPresentor? = null
@@ -14,12 +15,26 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        mainPresentor = MainPresentor(this)
+        mainPresentor = MainPresentor(this, this)
 
     }
 
     fun btn_start_click(v:View){
-        mainPresentor?.btn_click()
+        val pos = spinner.selectedItemPosition
+        println("MainActivity pos = $pos")
+        mainPresentor?.btn_click(pos)
+    }
+
+    override fun setSwEnAudio(state:Boolean){
+        sw_en_audio.isChecked =state
+    }
+
+    override fun setSwEnRandom(state:Boolean){
+        sw_en_random.isChecked = state
+    }
+
+    override fun setItemInSpinner(pos:Int){
+        spinner.setSelection(pos)
     }
 
 

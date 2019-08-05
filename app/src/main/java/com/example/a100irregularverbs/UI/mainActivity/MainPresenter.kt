@@ -6,17 +6,6 @@ import com.example.a100irregularverbs.UI.workActivity.WorkActivity
 import com.example.a100irregularverbs.model.work.Work
 
 class MainPresenter(context: Context, callback: IMainActivity):IMainActivity {
-    override fun setSwEnAudio(state: Boolean) {
-        callback.setSwEnAudio(state)
-    }
-
-    override fun setSwEnRandom(state: Boolean) {
-        callback.setSwEnRandom(state)
-    }
-
-    override fun setItemInSpinner(pos: Int) {
-        callback.setItemInSpinner(pos)
-    }
 
     val context: Context
     val callback: IMainActivity
@@ -37,5 +26,16 @@ class MainPresenter(context: Context, callback: IMainActivity):IMainActivity {
         context.startActivity(intent)
     }
 
+    override fun setSwEnAudio(state: Boolean) {
+        callback.setSwEnAudio(state)
+    }
+
+    override fun setSwEnRandom(state: Boolean) {
+        callback.setSwEnRandom(state)
+    }
+
+    override fun setItemInSpinner(pos: Int) {
+        callback.setItemInSpinner(pos)
+    }
 
 }

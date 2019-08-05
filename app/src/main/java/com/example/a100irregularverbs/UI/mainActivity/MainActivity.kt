@@ -9,20 +9,20 @@ import kotlinx.android.synthetic.main.activity_main.*
 class MainActivity : AppCompatActivity(), IMainActivity {
 
     //https://youtu.be/LRhu6oRWMjk
-    var mainPresentor:MainPresentor? = null
+    var mainPresenter:MainPresenter? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        mainPresentor = MainPresentor(this, this)
+        mainPresenter = MainPresenter(this, this)
 
     }
 
     fun btn_start_click(v:View){
         val pos = spinner.selectedItemPosition
         println("MainActivity pos = $pos")
-        mainPresentor?.btn_click(pos)
+        mainPresenter?.btn_click(pos)
     }
 
     override fun setSwEnAudio(state:Boolean){

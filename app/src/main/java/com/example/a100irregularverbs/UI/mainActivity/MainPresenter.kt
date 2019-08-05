@@ -5,7 +5,18 @@ import android.content.Intent
 import com.example.a100irregularverbs.UI.workActivity.WorkActivity
 import com.example.a100irregularverbs.model.work.Work
 
-class MainPresentor(context: Context, callback: IMainActivity) {
+class MainPresenter(context: Context, callback: IMainActivity):IMainActivity {
+    override fun setSwEnAudio(state: Boolean) {
+        callback.setSwEnAudio(state)
+    }
+
+    override fun setSwEnRandom(state: Boolean) {
+        callback.setSwEnRandom(state)
+    }
+
+    override fun setItemInSpinner(pos: Int) {
+        callback.setItemInSpinner(pos)
+    }
 
     val context: Context
     val callback: IMainActivity
@@ -15,6 +26,7 @@ class MainPresentor(context: Context, callback: IMainActivity) {
         this.context = context
         this.callback = callback
         work = Work.getInstance(context)
+        work.setMainCallback(this)
         work.getListTask()
     }
 

@@ -9,15 +9,15 @@
 
     <TextView
             android:text="@string/text_tv_task"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             android:id="@+id/tv_task"
             android:layout_marginTop="8dp"
             app:layout_constraintTop_toTopOf="parent"
-            style="@style/text_task" app:layout_constraintHorizontal_bias="0.111" android:layout_marginLeft="8dp"
-            android:layout_marginStart="8dp" android:layout_marginRight="8dp" android:layout_marginEnd="8dp"/>
+            style="@style/text_task"
+            app:layout_constraintStart_toStartOf="parent"
+    />
     <TextView
             android:text="@string/text_tv_v1"
             android:layout_width="wrap_content"
@@ -36,7 +36,7 @@
             android:autofillHints=""
             app:layout_constraintBaseline_toBaselineOf="@+id/btn_check_v1"
             android:layout_marginEnd="8dp" app:layout_constraintEnd_toStartOf="@+id/btn_check_v1"
-            android:layout_marginRight="8dp"/>
+            android:layout_marginRight="8dp" />
     <Button
             android:text="@string/text_btn_check"
             android:layout_width="40dp"
@@ -144,10 +144,15 @@
             android:text="@string/text_btn_next_task"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
-            android:id="@+id/btn_next_task" android:layout_marginRight="8dp" android:layout_marginEnd="8dp"
-            android:layout_marginLeft="8dp" android:layout_marginStart="8dp"
-            android:layout_marginTop="16dp" app:layout_constraintTop_toBottomOf="@+id/ed_enter_v3"/>
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/btn_next_task"
+            android:layout_marginRight="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/ed_enter_v3"/>
     <TextView
             android:text="H1"
             android:layout_width="wrap_content"
@@ -156,20 +161,28 @@
             android:layout_marginTop="8dp"
             app:layout_constraintTop_toBottomOf="@+id/tv_task"
             app:layout_constraintStart_toStartOf="@+id/ed_enter_v1"
-            android:layout_marginLeft="8dp" android:layout_marginStart="8dp" android:visibility="gone"/>
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:visibility="gone"/>
     <TextView
             android:text="H2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/tv_help_2" app:layout_constraintStart_toStartOf="@+id/ed_enter_v2"
-            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/btn_check_v1"
-            android:layout_marginStart="8dp" android:layout_marginLeft="8dp" android:visibility="gone"/>
+            android:id="@+id/tv_help_2"
+            app:layout_constraintStart_toStartOf="@+id/ed_enter_v2"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/btn_check_v1"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:visibility="gone"/>
     <TextView
             android:text="H3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/tv_help_3" android:layout_marginTop="8dp"
             app:layout_constraintTop_toBottomOf="@+id/btn_check_v2"
-            app:layout_constraintStart_toStartOf="@+id/ed_enter_v3" android:layout_marginLeft="8dp"
-            android:layout_marginStart="8dp" android:visibility="gone"/>
+            app:layout_constraintStart_toStartOf="@+id/ed_enter_v3"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:visibility="gone"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

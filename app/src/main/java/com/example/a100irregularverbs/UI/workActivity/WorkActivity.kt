@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import com.example.a100irregularverbs.R
+import com.example.a100irregularverbs.model.pojo.ItemTask
 import kotlinx.android.synthetic.main.activity_work.*
 
 class WorkActivity : AppCompatActivity(), IWorkActivity, View.OnClickListener {
@@ -40,11 +41,33 @@ class WorkActivity : AppCompatActivity(), IWorkActivity, View.OnClickListener {
 
     override fun onResume() {
         super.onResume()
-        if(tv_task.text.equals(resources.getString(R.string.text_tv_task)))
-            workPresenter?.getTask()
+//        if(tv_task.text.equals(resources.getString(R.string.text_tv_task)))
+//            workPresenter?.getTask()
     }
 
-    //Проверка
+    override fun showNewTask(taskItem: ItemTask) {
+        tv_task.text = taskItem.ru
+        tv_help_1.text = taskItem.v1
+        tv_help_2.text = taskItem.v2
+        tv_help_3.text = taskItem.v3
+
+        tv_help_1.visibility = View.GONE
+        tv_help_2.visibility = View.GONE
+        tv_help_3.visibility = View.GONE
+
+        ed_enter_v1.setText("")
+        ed_enter_v2.setText("")
+        ed_enter_v3.setText("")
+
+        ed_enter_v1.setTextAppearance(R.style.edit_default)
+        ed_enter_v2.setTextAppearance(R.style.edit_default)
+        ed_enter_v3.setTextAppearance(R.style.edit_default)
+
+        ed_enter_v1.setFocusableInTouchMode(true)
+        ed_enter_v1.requestFocus()
+
+    }
+//Проверка
 
     //Демонстрация ошибки
 

@@ -22,8 +22,8 @@ class MainPresenter(context: Context, callback: IMainActivity):IMainActivity {
     fun btn_click(posSpinner:Int) {
         println("MainPresenter pos = $posSpinner")
         work.selectPositionTask = posSpinner
-        val intent = Intent(context, WorkActivity::class.java)
-        context.startActivity(intent)
+        work.startWorkActivity(posSpinner)
+
     }
 
     override fun setSwEnAudio(state: Boolean) {

@@ -13,4 +13,27 @@
         <item name="android:textStyle">bold</item>
     </style>
 
+    <style name="edit_ok">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="edit_error">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+    <style name="help">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/Brown</item>
+    </style>
+
+    <style name="edit_default">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/Black</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
 </resources>
